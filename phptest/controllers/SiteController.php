@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Category;
 
 class SiteController extends Controller
 {
@@ -124,15 +125,5 @@ class SiteController extends Controller
     public function actionAbout()
     {
         return $this->render('about');
-    }
-
-    /**
-     * Displays phptest.
-     *
-     * @return string
-     */
-    public function actionPhptest()
-    {
-        return $this->render('phptest');
     }
 }
