@@ -38,6 +38,8 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
+			['label' => 'Php Test', 'url' => ['/site/phptest']],
+			/*
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
@@ -53,6 +55,7 @@ AppAsset::register($this);
                 . Html::endForm()
                 . '</li>'
             )
+			*/
         ],
     ]);
     NavBar::end();

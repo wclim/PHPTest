@@ -125,4 +125,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Displays phptest.
+     *
+     * @return string
+     */
+    public function actionPhptest()
+    {
+        return $this->render('phptest');
+    }
 }
