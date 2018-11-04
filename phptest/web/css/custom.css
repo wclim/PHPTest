@@ -1,4 +1,30 @@
-.right-align {
-    float:right;
-    margin:3px;
+.actions {
+	display:inline;
+}
+.actions>.btn {
+	margin:3px;
+}
+
+ul {
+    list-style: none;
+}
+
+li > span {
+	font-weight:bold;
+}
+
+li.none > span {
+    margin-right: 12.5px;
+}
+
+li.expand > span {
+    margin-right: 7.5px;
+}
+
+li.collapsed > span {
+    margin-right: 4px;
+}
+
+li.collapsed > ul {
+    display:none;
 }

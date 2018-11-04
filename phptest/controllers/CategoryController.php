@@ -5,6 +5,8 @@ namespace app\controllers;
 use Yii;
 use yii\web\Controller;
 use app\models\Category;
+use execut\widget\TreeView;
+use yii\web\JsExpression;
 
 class CategoryController extends Controller
 {
@@ -17,9 +19,11 @@ class CategoryController extends Controller
     {
     	$query = Category::find();
     	$categories = $query->orderBy('id')->all();
-    	
+        $treeView = $this->buildTreeView($categories);
+
         return $this->render('phptest', [
         	'categories' => $categories,
+            'treeView' => $treeView
         ]);
     }
 
@@ -50,6 +54,27 @@ class CategoryController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    protected function buildTreeView($categories){
+        $tree = array();
+        $ids = array();
+
+        foreach ($categories as $category) {
+          if (!isset($map[$category['parentId']])) {
+            $map[$category['parentId']] = array();
+          }
+
+          $map[$category['parentId']][] = $category;
+          $ids[] = $category['id'];
+        }
+        return $map;
+    }
+
+    public function console_log( $data ){
+        echo '<script>';
+        echo 'console.log('. json_encode( $data ) .')';
+        echo '</script>';
     }
 
 }

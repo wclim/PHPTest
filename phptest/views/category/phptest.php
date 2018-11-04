@@ -17,20 +17,33 @@ $this->params['breadcrumbs'][] = $this->title;
         This is the Php Test Page.
     </p>
 
-	<?php foreach ($categories as $category): ?>
-		<p>
-	        <?= Html::encode("{$category->id} ({$category->catName})") ?>:
-	        <?= $category->parentId ?>
-	        <?= Html::a('-', ['delete', 'id' => $category->id], [
-            'class' => 'btn btn-xs btn-info right-align',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-	        <?= Html::button('+', ['value'=>Url::to('index.php?r=category/createcat&id='.$category->id), 'class' => "btn btn-xs btn-primary right-align addCat"]) ?>
-	    </p>
-	<?php endforeach; ?>
+    <?php
+    function helper($treeView, $parentId = "") {
+		echo '<ul>';
+		foreach ($treeView[$parentId] as $entry) {
+			printf('<li class="none"><span></span>%s', $entry['catName']);
+			echo "<div class='actions'>";
+	        echo Html::button('+', ['value'=>Url::to('index.php?r=category/createcat&id='.$entry['id']), 'class' => "btn btn-xs btn-primary addCat"]);
+	        echo Html::a('-', ['delete', 'id' => $entry['id']], [
+	            'class' => 'btn btn-xs btn-info',
+	            'data' => [
+	                'confirm' => 'Are you sure you want to delete this item?',
+	                'method' => 'post',
+	            ],
+        	]);
+	        echo '</div>';
+			if (isset($treeView[$entry['id']])) {
+				helper($treeView, $entry['id']);
+			}
+			echo '</li>';
+		}
+
+		echo '</ul>';
+	  }
+
+	// create ul
+	helper($treeView);
+	?>
 	<?= Html::button('+', ['value'=>Url::to('index.php?r=category/createcat'), 'class' => "btn btn-primary addCat"]) ?>
 
 	<?php
