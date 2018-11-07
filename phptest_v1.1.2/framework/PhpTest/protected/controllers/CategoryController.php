@@ -125,11 +125,10 @@ class CategoryController extends Controller
 	{
 		$categories=new CActiveDataProvider('Category');
 
-		$dataTree=Category::getTree();
+		$dataTree=Category::getRoots();
 
 		$this->render('index',array(
-			'dataProvider'=>$categories,
-			'dataTree'=>$dataTree,
+			'treeRoots'=>$dataTree,
 		));
 	}
 

@@ -2615,3 +2615,499 @@ Stack trace:
 #12 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
 #13 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
 REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index&id=1033
+2018/11/07 04:09:55 [error] [exception.ParseError] ParseError: syntax error, unexpected 'CHtml' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:36
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/
+---
+2018/11/07 04:11:36 [error] [exception.ParseError] ParseError: syntax error, unexpected 'CHtml' (T_STRING), expecting ',' or ';' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:36
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/
+---
+2018/11/07 05:15:39 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:15:50 [error] [exception.ParseError] ParseError: syntax error, unexpected 'getTree' (T_STRING), expecting '(' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:01 [error] [exception.ParseError] ParseError: syntax error, unexpected 'getTree' (T_STRING) in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:07 [error] [exception.ParseError] ParseError: syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:26
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:13 [error] [exception.ParseError] ParseError: syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:57
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:23 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:32 [error] [exception.ParseError] ParseError: syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:26
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:16:38 [error] [exception.ParseError] ParseError: syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:57
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:17:59 [error] [php] Undefined variable: dataTree (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#2 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CategoryController->render()
+#3 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:18:36 [error] [exception.Error] Error: Call to undefined function model() in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php(15): getTree()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(130): CController->render('index', Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#16 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#17 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:19:48 [error] [exception.Error] Error: Call to private method Category::getRoots() from context 'CategoryController' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php:128
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#11 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:19:59 [error] [exception.Error] Error: Call to private method Category::getRoots() from context 'CategoryController' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php:128
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#11 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:20:00 [error] [exception.Error] Error: Call to private method Category::getRoots() from context 'CategoryController' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php:128
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#11 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:20:01 [error] [exception.Error] Error: Call to private method Category::getRoots() from context 'CategoryController' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php:128
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#11 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=site/index
+---
+2018/11/07 05:20:11 [error] [php] Undefined variable: treeRoots (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CategoryController->render()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:20:25 [error] [php] Undefined variable: treeRoots (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CategoryController->render()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:20:26 [error] [php] Undefined variable: treeRoots (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CategoryController->render()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:22:01 [error] [php] Undefined variable: treeRoots (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CategoryController->render()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:22:02 [error] [php] Undefined variable: treeRoots (C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CategoryController->renderInternal()
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CategoryController->renderFile()
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CategoryController->renderPartial()
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(132): CategoryController->render()
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CategoryController->filterAccessControl()
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CategoryController->runActionWithFilters()
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CategoryController->run()
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CWebApplication->run()
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+2018/11/07 05:28:36 [error] [exception.ParseError] ParseError: syntax error, unexpected ''<div class="modal-dialog" rol' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:94
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(131): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=category/index&id=1031
+---
+2018/11/07 05:29:19 [error] [exception.ParseError] ParseError: syntax error, unexpected 'CHtml' (T_STRING) in C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\views\category\index.php:99
+Stack trace:
+#0 C:\xampp\htdocs\phptest_v1\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#3 C:\xampp\htdocs\phptest_v1\framework\PhpTest\protected\controllers\CategoryController.php(131): CController->render('index', Array)
+#4 C:\xampp\htdocs\phptest_v1\framework\web\actions\CInlineAction.php(49): CategoryController->actionIndex()
+#5 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\phptest_v1\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\phptest_v1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\phptest_v1\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(282): CController->run('index')
+#14 C:\xampp\htdocs\phptest_v1\framework\web\CWebApplication.php(141): CWebApplication->runController('category/index')
+#15 C:\xampp\htdocs\phptest_v1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\phptest_v1\framework\PhpTest\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/phptest_v1/framework/PhpTest/index.php?r=category/index
+HTTP_REFERER=http://localhost/phptest_v1/framework/PhpTest/index.php?r=category/index&id=1031
+---

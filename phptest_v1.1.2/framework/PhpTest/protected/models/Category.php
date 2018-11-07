@@ -14,7 +14,6 @@
  */
 class Category extends CActiveRecord
 {
-	static private $asTree = [];
 
 	/**
 	 * @return string the associated database table name
@@ -104,63 +103,11 @@ class Category extends CActiveRecord
 		return parent::model($className);
 	}
 
-	public static function getTree() {
-        if (empty(self::$asTree)) {
-            $rows = self::model()->findAll('parentId IS NULL');
-            foreach ($rows as $item) {
-                self::$asTree[] = self::getTreeItems($item);
-            }
-        }
+	public function getRoots()
+	{
+		return self::model()->findAll('parentId IS NULL');
+	}
 
-        return self::$asTree;
-    }
-
-    private static function getTreeItems($modelRow) {
-
-        if (!$modelRow)
-            return;
-
-        if (isset($modelRow->categories)) {
-            $chump = self::getTreeItems($modelRow->categories);
-            if ($chump != null)
-                $res = array('children' => $chump, 'text' => CHtml::link($modelRow->catName, '#', array('id' => $modelRow->id)). 
-                	self::getAddBtn($modelRow->id).
-                	self::getDeleteBtn($modelRow->id));
-            else
-                $res = array('text' => CHtml::link($modelRow->catName, '#', array('id' => $modelRow->id)) . 
-                	self::getAddBtn($modelRow->id).
-                	self::getDeleteBtn($modelRow->id));
-            return $res;
-        } else {
-            if (is_array($modelRow)) {
-                $arr = array();
-                foreach ($modelRow as $leaves) {
-                    $arr[] = self::getTreeItems($leaves);
-                }
-                return $arr;
-            } else {
-                return array('text' => CHtml::link($modelRow->catName, '#', array('id' => $modelRow->id)). 
-                	self::getAddBtn($modelRow->id).
-                	self::getDeleteBtn($modelRow->id));
-            }
-        }
-    }
-
-    private function getAddBtn($id){
-            return    	CHtml::button("+", 
-                		array('class' => "btn btn-xs btn-primary addCat",
-                				'data-toggle' => "modal",
-                				'data-target'=>"#addCategoryModal",
-                				'label'=>"/phptest_v1/framework/PhpTest/index.php?r=category/create&id=".$id));
-    }
-
-    private function getDeleteBtn($id){
-            return    	CHtml::link("-", "#",
-                		array('class' => "btn btn-xs btn-info",
-                			'submit'=>array('category/delete','id'=>$id),
-        					'confirm' => 'Are you sure you want to delete this item?',
-        					'method'=>'post'));
-		    }
 }
 
 

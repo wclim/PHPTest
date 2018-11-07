@@ -31,7 +31,6 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				array('label'=>'PhpTest', 'url'=>array('/category/index')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
 			),
 		)); ?>
 	</div><!-- mainmenu -->
